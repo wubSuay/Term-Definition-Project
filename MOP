@@ -1,0 +1,26 @@
+definitions = input("What are you forgetting now? ")
+def_print = ["print", "printing", "PRINT", "PRINTING", "Print", "Printing"]
+definition_loop = True
+
+
+print(definitions.title())
+while definition_loop == True:
+    if definitions == def_print:
+        print("Print's things.")
+
+    elif definitions == "Loops":
+        print("Loops things.")
+
+    elif definitions == "For loops":
+        print("For loops things.")
+
+    else:
+        print("Try typing it out again. ")
+    definition_loop = False
+    definitions = input("Anything else? ")
+
+    if definitions == "quit":
+        print("\n\t---Program Terminated---")
+        break
+    else:
+        definition_loop = True
