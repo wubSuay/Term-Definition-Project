@@ -1,25 +1,61 @@
-definitions = input("What are you forgetting now? ")
-def_print = ["print", "printing", "PRINT", "PRINTING", "Print", "Printing"]
-definition_loop = True
+definitions = input("What are you forgetting now?\nA. Strings  B. Concatenate  C. Floats  D. Slice  E. For-Loop (Loop)  F. Dictionary  G. Flag\n")
 
+definition_loop = True
 
 print(definitions.title())
 while definition_loop == True:
-    if definitions == def_print:
-        print("Print's things.")
 
-    elif definitions == "Loops":
-        print("Loops things.")
+    if definitions == "A":
+        print("\n\tA string in Python is a sequence of characters.\n It is a derived data type.\n Strings are immutable.\n This means that once defined, they cannot be changed.\n Many Python methods, such as replace() , join() , or split() modify strings.")
+    elif definitions == "a":
+        print("\n\tA string in Python is a sequence of characters.\n It is a derived data type.\n Strings are immutable.\n This means that once defined, they cannot be changed.\n Many Python methods, such as replace() , join() , or split() modify strings.")
 
-    elif definitions == "For loops":
-        print("For loops things.")
+    elif definitions == "B":
+        print("\n\tConcatenation means joining strings together end-to-end to create a new string.\n To concatenate strings, we use the + operator.\n Keep in mind that when we work with numbers, + will be an operator for addition, but when used with strings it is a joining operator.")
+    elif definitions == "b":
+        print("\n\tConcatenation means joining strings together end-to-end to create a new string.\n To concatenate strings, we use the + operator.\n Keep in mind that when we work with numbers, + will be an operator for addition, but when used with strings it is a joining operator.")
+
+    elif definitions == "C":
+        print("\n\tThey represent real numbers and are written with a decimal point dividing the integer and fractional parts.\n Floats may also be in scientific notation, with E or e indicating the power of 10 (2.5e2 = 2.5 x 102 = 250).")
+    elif definitions == "c":
+        print("\n\tThey represent real numbers and are written with a decimal point dividing the integer and fractional parts.\n Floats may also be in scientific notation, with E or e indicating the power of 10 (2.5e2 = 2.5 x 102 = 250).")
+
+    elif definitions == "D":
+        print("\n\tIn short, slicing is a flexible tool to build new lists out of an existing list.\n Python supports slice notation for any sequential data type like lists, strings, tuples, bytes, bytearrays, and ranges.\n Also, any new data structure can add its support as well.")
+    elif definitions == "d":
+        print("\n\tIn short, slicing is a flexible tool to build new lists out of an existing list.\n Python supports slice notation for any sequential data type like lists, strings, tuples, bytes, bytearrays, and ranges.\n Also, any new data structure can add its support as well.")
+
+    elif definitions == "E":
+        print("\n\tA for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).\n This is less like the for keyword in other programming languages, and works more like an iterator method as found in other object-orientated programming languages.")        
+    elif definitions == "e":
+        print("\n\tA for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).\n This is less like the for keyword in other programming languages, and works more like an iterator method as found in other object-orientated programming languages.")        
+
+    elif definitions == "F":
+        print("\n\tDictionaries are used to store data values in key:value pairs.\n A dictionary is a collection which is unordered, changeable and does not allow duplicates.")
+    elif definitions == "f":
+        print("\n\tDictionaries are used to store data values in key:value pairs.\n A dictionary is a collection which is unordered, changeable and does not allow duplicates.")
+
+    elif definitions == "G":
+        print("\n\tA flag in Python acts as a signal to the program to determine whether or not the program as a whole or a specific section of the program should run.\n In other words, you can set the flag to True and the program will run continuously until any type of event makes it False.")
+    elif definitions == "g":
+        print("\n\tA flag in Python acts as a signal to the program to determine whether or not the program as a whole or a specific section of the program should run.\n In other words, you can set the flag to True and the program will run continuously until any type of event makes it False.")
+
 
     else:
-        print("Try typing it out again. ")
+        print("\nTry typing it out again. ")
     definition_loop = False
-    definitions = input("Anything else? ")
+    definitions = input("\nAnything else? ")
 
-    if definitions == "quit":
+    if definitions == "NO":
+        print("\n\t---Program Terminated---")
+        break
+    elif definitions == "No":
+        print("\n\t---Program Terminated---")
+        break
+    elif definitions == "no":
+        print("\n\t---Program Terminated---")
+        break
+    elif definitions == "nO":
         print("\n\t---Program Terminated---")
         break
     else:
